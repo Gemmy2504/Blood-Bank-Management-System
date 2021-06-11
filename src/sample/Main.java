@@ -27,14 +27,10 @@ public class Main extends Application {
 
         DataFiles files = new DataFiles();
 
-        try {
-//            files.insertUser(new User(1, "mohab", "mohab@gmail.com", "2r22r2r2r2", 20, "M", "A"));
-            User u = files.getUser("hazem@gmail.com");
-            System.out.println(u);
-            System.out.println(files.getAllUsers());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        files.insertUser(new User(1, "mohab", "mohab@gmail.com", "2r22r2r2r2", 20, "M", "A"));
+        User u = files.getUser("hazem@gmail.com");
+        System.out.println(u);
+        System.out.println(files.getAllUsers());
 
     }
 
