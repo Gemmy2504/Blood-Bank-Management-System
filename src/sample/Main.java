@@ -17,20 +17,15 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 717, 540));
+        primaryStage.setScene(new Scene(root, 1300, 860));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
-//        launch(args);
 
-        DataFiles files = new DataFiles();
+        launch(args);
 
-        files.insertUser(new User(1, "mohab", "mohab@gmail.com", "2r22r2r2r2", 20, "M", "A"));
-        User u = files.getUser("hazem@gmail.com");
-        System.out.println(u);
-        System.out.println(files.getAllUsers());
 
     }
 

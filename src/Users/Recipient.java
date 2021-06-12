@@ -9,4 +9,8 @@ public class Recipient extends User{
         this.hospital = hospital;
         this.doctorOfCase = doctorOfCase;
     }
+    @Override
+    public String toString() {
+        return super.toString() + "-" + hospital + "-" + doctorOfCase;
+    }
 }
